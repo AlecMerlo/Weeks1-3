@@ -13,6 +13,6 @@ public class Fire : MonoBehaviour
     {
         t += Time.deltaTime;
         t %= 1;
-        transform.position = basePos - (Vector3.up * curve.Evaluate(t) * 20);
+        transform.position = basePos - (Vector3.up * curve.Evaluate(t) * 12);
     }
 }
