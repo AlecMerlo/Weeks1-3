@@ -11,8 +11,8 @@ public class Fire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        t += Time.deltaTime;
+        t += (Time.deltaTime * 0.8f);
         t %= 1;
-        transform.position = basePos - (Vector3.up * curve.Evaluate(t) * 12);
+        transform.localPosition = basePos - (Vector3.up * curve.Evaluate(t) * 12);
     }
 }

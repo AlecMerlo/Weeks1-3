@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Bg
+    uniqueID: 111870467
+    locked: 0
+  - name: Wall
+    uniqueID: 1153628685
+    locked: 0
+  - name: Character
+    uniqueID: 2645041177
+    locked: 0
+  - name: Fire
+    uniqueID: 1741411311
+    locked: 0
