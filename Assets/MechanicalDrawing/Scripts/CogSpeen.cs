@@ -6,11 +6,12 @@ public class CogSpeen : MonoBehaviour
 {
     public AnimationCurve curve;
     public float speed;
+    public float curveSpeed;
     float t;
     // Update is called once per frame
     void Update()
     {
-        t += Time.deltaTime;
+        t += Time.deltaTime * curveSpeed;
         t %= 1;
         transform.Rotate(Vector3.forward * Time.deltaTime * speed * curve.Evaluate(t));
     }

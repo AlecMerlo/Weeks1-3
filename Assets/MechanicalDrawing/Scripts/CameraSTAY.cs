@@ -6,7 +6,8 @@ public class CameraSTAY : MonoBehaviour
 {
     void Start()
     {
-        //pleasepleasepleasepleasepleasepleasepleaseplease
+        // please work guh!!
+        // this should be in the 16:9 aspect ratio
         Screen.SetResolution(1920, 1080, false);
     }
 }
