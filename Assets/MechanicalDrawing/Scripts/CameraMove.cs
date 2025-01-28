@@ -11,6 +11,8 @@ public class CameraMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // If the mouse passes a certain position, the camera will rotate in whichever direction until it reaches the max
+        // repeat that 3 more times
         if (Input.mousePosition.x < (Screen.width / 2) - (Screen.width / 4) && transform.rotation.y > -0.2f * Mathf.Deg2Rad)
         {
             transform.Rotate(0, -0.1f * Mathf.Deg2Rad, 0);

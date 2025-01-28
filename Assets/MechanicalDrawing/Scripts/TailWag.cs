@@ -10,6 +10,7 @@ public class TailWag : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // a forever rotation, it will look fine on screen so it doesn't matter if it doesn't switch directions
         t += Time.deltaTime;
         transform.RotateAround(tailBase.transform.position, Vector3.up, Time.deltaTime * speed);
     }

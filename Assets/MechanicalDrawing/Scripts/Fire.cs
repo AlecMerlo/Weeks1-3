@@ -11,6 +11,7 @@ public class Fire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // cure will move the sprites up and down instantly to simulate sprites changing
         t += (Time.deltaTime * 0.8f);
         t %= 1;
         transform.localPosition = basePos - (Vector3.up * curve.Evaluate(t) * 12);

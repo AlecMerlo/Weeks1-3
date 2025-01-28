@@ -11,6 +11,7 @@ public class CogSpeen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // rotates based on time
         t += Time.deltaTime * curveSpeed;
         t %= 1;
         transform.Rotate(Vector3.forward * Time.deltaTime * speed * curve.Evaluate(t));
